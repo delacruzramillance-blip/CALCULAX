@@ -650,182 +650,268 @@ input {
 
 
 
-/* =========================
-   PHONE RESPONSIVE
-========================= */
+/* =================================
+   MOBILE PHONE FIX
+================================= */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-    /* NAVIGATION */
-    nav {
-        height: 65px;
-        padding: 0 15px;
-        gap: 12px;
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
-    .logo {
-        width: 38px;
-        height: 38px;
+
+    /* ==============================
+       NAVBAR
+    ============================== */
+
+    nav {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+
+        width: 100% !important;
+        height: 60px !important;
+
+        padding: 0 10px !important;
+
+        display: flex !important;
+        align-items: center !important;
+
+        gap: 8px !important;
+    }
+
+    nav .logo {
+        width: 35px !important;
+        height: 35px !important;
     }
 
     nav .nav-title {
-        font-size: 20px;
+        font-size: 18px !important;
+        margin-right: auto !important;
     }
 
     nav a {
-        font-size: 12px;
+        font-size: 11px !important;
+        margin: 0 !important;
     }
 
 
-    /* =========================
+    /* ==============================
        HOME
-    ========================= */
+    ============================== */
 
     .home {
-        height: 100vh;
+        width: 100% !important;
+        height: 100vh !important;
+        overflow: hidden !important;
+    }
+
+    .home img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
     }
 
     .home-text {
-        width: 90%;
-        top: 50%;
-        left: 5%;
-        text-align: center;
+        width: 90% !important;
+
+        position: absolute !important;
+
+        top: 50% !important;
+        left: 5% !important;
+
+        transform: translateY(-50%) !important;
+
+        text-align: center !important;
     }
 
     .home-text h1 {
-        font-size: 35px;
+        font-size: 30px !important;
     }
 
     .lax {
-        font-size: 48px;
+        font-size: 42px !important;
     }
 
     .home-text p {
-        font-size: 15px;
-        line-height: 1.5;
-    }
-
-    .home-text a {
-        display: inline-block;
-        padding: 12px 25px;
+        font-size: 14px !important;
+        line-height: 1.5 !important;
     }
 
 
-    /* =========================
-       PRICING BOXES
-    ========================= */
+    /* ==============================
+       PRICING
+    ============================== */
 
     .boxes {
-        min-height: auto;
-        flex-direction: column;
-        align-items: center;
-        padding: 60px 20px;
-        gap: 25px;
+        width: 100% !important;
+        min-height: auto !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+
+        align-items: center !important;
+
+        gap: 25px !important;
+
+        padding: 50px 15px !important;
     }
 
-    .leftbox,
-    .middlebox,
-    .rightbox {
-        width: 100%;
-        max-width: 350px;
-        height: 500px;
-        flex-shrink: 0;
+    .boxes > .leftbox,
+    .boxes > .middlebox,
+    .boxes > .rightbox {
+
+        width: 100% !important;
+        max-width: 350px !important;
+
+        height: 500px !important;
+
+        margin: 0 !important;
+
+        flex-shrink: 0 !important;
     }
 
 
-    /* =========================
+    /* ==============================
        CALCULATOR
-    ========================= */
+    ============================== */
 
     .calcu1 {
-        width: calc(100% - 30px);
-        max-width: 360px;
-        height: auto;
 
-        margin: 100px auto 50px;
+        width: calc(100% - 30px) !important;
+        max-width: 360px !important;
 
-        padding: 15px;
+        height: auto !important;
+
+        margin: 90px auto 40px !important;
+
+        padding: 15px !important;
+
+        display: block !important;
     }
+
 
     #display {
-        width: 100%;
-        height: 65px;
-        font-size: 28px;
+
+        width: 100% !important;
+
+        height: 65px !important;
+
+        font-size: 28px !important;
     }
+
 
     .buttons {
-        width: 100%;
-        height: auto;
 
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        width: 100% !important;
 
-        gap: 8px;
-        padding: 8px;
+        height: auto !important;
+
+        display: grid !important;
+
+        grid-template-columns: repeat(4, 1fr) !important;
+
+        gap: 7px !important;
+
+        padding: 8px !important;
+
+        margin-top: 15px !important;
     }
+
+
+    .buttons br {
+        display: none !important;
+    }
+
 
     .buttons button {
-        width: 100%;
-        height: 55px;
-        font-size: 18px;
+
+        width: 100% !important;
+
+        height: 55px !important;
+
+        font-size: 18px !important;
+
+        margin: 0 !important;
     }
 
-    /* Remove <br> spacing */
-    .buttons br {
-        display: none;
-    }
 
-
-    /* =========================
+    /* ==============================
        PRICING POPUP
-    ========================= */
+    ============================== */
 
     .pricing-overlay {
-        overflow-y: auto;
-        padding: 30px 15px;
-        align-items: flex-start;
+
+        width: 100% !important;
+        height: 100vh !important;
+
+        overflow-y: auto !important;
+
+        padding: 30px 15px !important;
+
+        align-items: flex-start !important;
     }
 
     .boxes1 {
-        width: 100%;
-        flex-direction: column;
-        gap: 25px;
-        margin-top: 30px;
+
+        width: 100% !important;
+
+        display: flex !important;
+
+        flex-direction: column !important;
+
+        align-items: center !important;
+
+        gap: 25px !important;
     }
 
     .boxes1 .leftbox,
     .boxes1 .middlebox,
     .boxes1 .rightbox {
-        width: 100%;
-        max-width: 350px;
-        height: 500px;
+
+        width: 100% !important;
+        max-width: 350px !important;
+
+        height: 500px !important;
+
+        margin: 0 !important;
     }
 
 
-    /* =========================
+    /* ==============================
        LOGIN / SIGN UP
-    ========================= */
+    ============================== */
 
     .card {
-        width: 100%;
-        min-height: 100vh;
-        height: auto;
 
-        padding: 30px 15px;
+        width: 100% !important;
+        min-height: 100vh !important;
+        height: auto !important;
 
-        flex-direction: column;
-    }
+        padding: 20px !important;
 
-    .loginimg {
-        position: absolute;
-        width: 100%;
-        height: 100%;
+        display: flex !important;
+
+        justify-content: center !important;
+        align-items: center !important;
     }
 
     .card form {
-        width: 100%;
-        max-width: 350px;
-        padding: 30px;
+
+        width: 100% !important;
+        max-width: 350px !important;
+
+        padding: 30px !important;
+    }
+
+    .card form input {
+
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
 }
