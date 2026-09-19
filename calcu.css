@@ -647,3 +647,185 @@ input {
     background: #5441ff;
     color: white;
 }
+
+
+
+/* =========================
+   PHONE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVIGATION */
+    nav {
+        height: 65px;
+        padding: 0 15px;
+        gap: 12px;
+    }
+
+    .logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    nav .nav-title {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+
+    /* =========================
+       HOME
+    ========================= */
+
+    .home {
+        height: 100vh;
+    }
+
+    .home-text {
+        width: 90%;
+        top: 50%;
+        left: 5%;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 35px;
+    }
+
+    .lax {
+        font-size: 48px;
+    }
+
+    .home-text p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .home-text a {
+        display: inline-block;
+        padding: 12px 25px;
+    }
+
+
+    /* =========================
+       PRICING BOXES
+    ========================= */
+
+    .boxes {
+        min-height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 20px;
+        gap: 25px;
+    }
+
+    .leftbox,
+    .middlebox,
+    .rightbox {
+        width: 100%;
+        max-width: 350px;
+        height: 500px;
+        flex-shrink: 0;
+    }
+
+
+    /* =========================
+       CALCULATOR
+    ========================= */
+
+    .calcu1 {
+        width: calc(100% - 30px);
+        max-width: 360px;
+        height: auto;
+
+        margin: 100px auto 50px;
+
+        padding: 15px;
+    }
+
+    #display {
+        width: 100%;
+        height: 65px;
+        font-size: 28px;
+    }
+
+    .buttons {
+        width: 100%;
+        height: auto;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .buttons button {
+        width: 100%;
+        height: 55px;
+        font-size: 18px;
+    }
+
+    /* Remove <br> spacing */
+    .buttons br {
+        display: none;
+    }
+
+
+    /* =========================
+       PRICING POPUP
+    ========================= */
+
+    .pricing-overlay {
+        overflow-y: auto;
+        padding: 30px 15px;
+        align-items: flex-start;
+    }
+
+    .boxes1 {
+        width: 100%;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .boxes1 .leftbox,
+    .boxes1 .middlebox,
+    .boxes1 .rightbox {
+        width: 100%;
+        max-width: 350px;
+        height: 500px;
+    }
+
+
+    /* =========================
+       LOGIN / SIGN UP
+    ========================= */
+
+    .card {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+
+        padding: 30px 15px;
+
+        flex-direction: column;
+    }
+
+    .loginimg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card form {
+        width: 100%;
+        max-width: 350px;
+        padding: 30px;
+    }
+
+}
